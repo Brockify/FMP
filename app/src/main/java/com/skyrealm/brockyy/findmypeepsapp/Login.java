@@ -35,6 +35,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
     private TextView useremailforg;
     private TextView tvforgot, resendverif;
     private boolean Regist = false;
+    int verify = 1;
     // Progress Dialog
     private ProgressDialog pDialog;
     TabLayout setupLogin = new TabLayout();
@@ -69,6 +70,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         //set variables to xml fields
         users = (EditText) findViewById(R.id.username);
         pass = (EditText) findViewById(R.id.password);
@@ -79,6 +81,8 @@ public class Login extends AppCompatActivity implements OnClickListener {
         bRegister.setOnClickListener(this);
         tvforgot = (TextView) findViewById(R.id.forgotbut);
         resendverif = (TextView) findViewById(R.id.rsndverification);
+
+
         resendverif.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -423,7 +427,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
 
     //class sends post and recieves response
     class AttemptLogin extends AsyncTask<String, String, String> {
-        int verify;
+
 
         @Override
         protected void onPreExecute() {
@@ -462,7 +466,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
                     verify = json.getInt(TAG_noverif);
                 } else {
                     success = 0;
-                    verify = 0;
+                    verify = 1;
                 }
 
                 if (success == 1 && verify == 1)
@@ -526,7 +530,8 @@ public class Login extends AppCompatActivity implements OnClickListener {
                     alert2 = Built.create();
                     alert2.show();
                 }else{
-                    Toast.makeText(Login.this, message, Toast.LENGTH_LONG).show();}
+                    Toast.makeText(Login.this, message, Toast.LENGTH_LONG).show();
+                }
 
             }
 
@@ -558,7 +563,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
 
             // create tags
             int success;
-            String verify = coder;
+            String ver = coder;
             boolean failure = false;
 
 
@@ -567,7 +572,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
 
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
                 params.add(new BasicNameValuePair("username", username));
-                params.add(new BasicNameValuePair("verify", verify));
+                params.add(new BasicNameValuePair("verify", ver));
 
 
                 JSONObject json = jsonParser.makeHttpRequest(
