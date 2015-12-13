@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Register"
+        android:textSize="30dp"
+        android:id="@+id/title"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:hint="Enter username"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_above="@+id/pass"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_above="@+id/verpass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Enter e-mail"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/verpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@android:color/primary_text_light"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

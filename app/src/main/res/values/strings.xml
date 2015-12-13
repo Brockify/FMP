@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Find My Peeps</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+
+    <string name="title_activity_friends_list">FriendsListActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_tabs">Tabs</string>
+
+    <string-array name="autoUpdate">
+        <item>Minutes</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string name="title_activity_fprofile">FProfile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_friend_profile">FriendProfile</string>
+    <string name="title_activity_status">StatusActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2935071563002230/1200550907</string>
+</resources>

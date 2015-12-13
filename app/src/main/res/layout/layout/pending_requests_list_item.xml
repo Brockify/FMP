@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <!-- Name Label -->
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:height="30dp" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:text="Accept"
+        android:layout_alignTop="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:background="#3366CC"
+        android:textColor="#B0E0E6"
+        android:layout_alignBottom="@+id/name"
+        android:clickable="true"
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/declineButton"
+        android:text="Decline"
+        android:textColor="#B0E0E6"
+        android:background="#3366CC"
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/acceptedOrDeclined"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/declineButton"
+        android:layout_toStartOf="@+id/declineButton"
+        android:layout_alignParentStart="false"
+        android:visibility="invisible"
+        />'
+
+</RelativeLayout>

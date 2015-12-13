@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusableInTouchMode="true"
+    android:id="@+id/myLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Profileview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Username"
+        android:id="@+id/status_usernameTextView"
+        android:textSize="100px"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="uploadImage"
+        android:text="Update"
+        android:id="@+id/button"
+        android:layout_below="@+id/Top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:onClick="loadImagefromGallery"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/grey"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Click Profile Picture to edit"
+        android:id="@+id/textView"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/status_usernameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:id="@+id/biotext"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Edit your bio here"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:gravity="left|top" />
+
+    <Button
+        android:id="@+id/SendBio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Bio"
+        android:layout_below="@+id/biotext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Top"
+        android:id="@+id/Top"
+        android:onClick="SetTop"
+        android:layout_marginTop="107dp"
+        android:layout_below="@+id/imgView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Middle"
+        android:onClick="SetMiddle"
+        android:id="@+id/Middle"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/imgView"
+        android:layout_alignStart="@+id/imgView" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Bottom"
+        android:onClick="SetBottom"
+        android:id="@+id/Bottom"
+        android:layout_alignTop="@+id/Middle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Click one of three buttons \nbelow to crop photo"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/Middle"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginBottom="26dp"
+        android:focusable="true" />
+
+</RelativeLayout>
+</ScrollView>

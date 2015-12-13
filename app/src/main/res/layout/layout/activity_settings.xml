@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:focusableInTouchMode="true"
+        android:id="@+id/myLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Profileview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Settings"
+            android:id="@+id/title"
+            android:textSize="100px"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/Newuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:hint="Change Username"
+            android:imeOptions="actionDone"
+            android:layout_below="@+id/title"
+
+            android:layout_marginTop="20dp"
+            android:gravity="fill_horizontal|center_vertical|center_horizontal"
+            android:layout_centerInParent="true" />
+
+
+        <Button
+
+            android:id="@+id/Change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="#3366CC"
+            android:textColor="#B0E0E6"
+            android:bottomLeftRadius="8dp"
+            android:bottomRightRadius="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/Newuser"
+            />
+
+        <EditText
+            android:id="@+id/oldpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Old Password"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:password="true"
+            android:gravity="fill_horizontal|center_vertical|center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/Change"/>
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:password="true"
+            android:focusable="true"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:hint="New Password"
+            android:imeOptions="actionDone"
+            android:layout_below="@+id/oldpass"
+            android:gravity="fill_horizontal|center_vertical|center_horizontal"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/restpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:background="#3366CC"
+            android:textColor="#B0E0E6"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/newpass" />
+
+
+        <EditText
+            android:id="@+id/Verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Confirm Username"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/primary_text_light"
+            android:imeOptions="actionDone"
+            android:gravity="fill_horizontal|center_vertical|center_horizontal"
+            android:layout_marginTop="47dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/restpass" />
+        <Button
+
+            android:id="@+id/Delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Account"
+            android:background="#3366CC"
+            android:textColor="#B0E0E6"
+            android:bottomLeftRadius="8dp"
+            android:bottomRightRadius="8dp"
+            android:topLeftRadius="8dp"
+            android:topRightRadius="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/Verify"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

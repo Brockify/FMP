@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#666666</color>
+    <color name="ColorPrimary">#3366CC</color>
+    <color name="ColorPrimaryDark">#2D5BB7</color>
+    <color name="tabsScrollColor">#000000</color>
+    <color name="buttonbg">#eaf1f9</color>
+    <color name="darkgrey">#000000</color>
+</resources>
